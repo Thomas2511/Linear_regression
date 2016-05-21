@@ -1,0 +1,29 @@
+[package]
+name = "linear_regression"
+version = "0.1.0"
+authors = ["tdieumeg <tdieumeg@users.noreply.github.com>"]
+description = ""
+documentation = "https://Thomas2511.github.io/linear_regression/linear_regression"
+repository = "https://github.com/Thomas2511/linear_regression.git"
+readme = "README.mb"
+keywords = ["linear_regression", "algorithm"]
+
+[[bin]]
+name = "estimate_price"
+path = "src/bin/estimate_price.rs"
+doc = false
+
+[[bin]]
+name = "learning_rate"
+path = "src/bin/learning_rate.rs"
+doc = false
+
+[dependencies.csv]
+version = "0.14"
+
+[dependencies.toml]
+version = "*"
+
+[dependencies.clap]
+version = "*"
+features = ["yaml", "suggestions", "color"]
